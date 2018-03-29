@@ -22,6 +22,10 @@ CONTENTS:
 01 Sensible defaults ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
+
+@import "css/sticky-menu.css";
+@import "css/bootstrap.min.css";
+@import "css/bootstrap.css";
 @import "css/reset.css";
 
 div,
