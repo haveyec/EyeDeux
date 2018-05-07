@@ -139,8 +139,7 @@ foreach($pages as $page) {
       <!-- BEGIN PAGE TITLE -->
       <section id="page-title" class="page-title-full page-title-dark video-bg">
         <div class="video-wrapper">
-          Video wrapper
-          <div class="video-overlay">Video Overlay</div>
+          <div class="video-overlay"></div>
         </div>
         <div class="container" data-0="transform:translateY(-0px);opacity:1;" data-600="transform:translateY(80px);opacity:0;">
           h438
