@@ -71,6 +71,41 @@
 	}	
 
 	
+	function nerd_gang(){
+	
+	$nerd_gang_url = "http://nerdgang.rocks";
+	
+	$a_ref = "<a href=";
+
+	
+	return $a_ref.$nerd_gang_url.' ">'."Site design & developed by the nerds @ Nerd Gang"."</a>";
+}
+
+function get_scripts_css_path(){
+	$template_script_css_path = '/assets/css/';
+	$full_scripts_path = get_the_themes_path() . $template_script_css_path;
+
+	return $full_scripts_path;
+}
+
+function get_images_path(){
+	$template_script_css_path = '/assets/img/';
+	$full_scripts_path = get_the_themes_path() . $template_script_css_path;
+
+	return $full_scripts_path;
+}
+
+function get_scripts_path(){
+	$template_script_library = '/assets/js/';
+	$full_scripts_path = get_the_themes_path(). $template_script_library;
+
+	return $full_scripts_path;
+}
+
+function get_the_themes_path(){
+$theme_root_uri = get_template_directory_uri();
+	return $theme_root_uri;
+}
 
 /* ========================================================================================================================
 	
