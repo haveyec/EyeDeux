@@ -17,3 +17,7 @@
 .menu-menu-container>ul>li>a{
 	color: green;
 }
+
+#main-menu ul li a{
+    color: blue;
+}

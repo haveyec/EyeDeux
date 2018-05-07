@@ -36,6 +36,7 @@ Template Name: My Awesome Custom Page
   <link rel="stylesheet" href="<?php echo get_scripts_css_path(); ?>themes.css"/>
   <link rel="stylesheet" href="<?php echo get_scripts_css_path(); ?>ui.css"/>
   <link rel="stylesheet" href="<?php echo get_scripts_css_path(); ?>widgets.css"/>
+  <link rel="stylesheet" href="<?php echo get_scripts_css_path(); ?>style2.css"/>
   <script type="text/javascript" src="<?php echo get_scripts_path(); ?>jquery-1.7.1.min.js"></script>
   <script src="<?php echo get_scripts_path(); ?>modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -137,12 +138,11 @@ foreach($pages as $page) {
     <div id="main-content">
 
       <!-- BEGIN PAGE TITLE -->
-      <section id="page-title" class="page-title-full page-title-dark video-bg">
-        <div class="video-wrapper">
-          <div class="video-overlay"></div>
+      <section id="page-title" class="l">
+        <div class="">
+          <div class=""></div>
         </div>
         <div class="container" data-0="transform:translateY(-0px);opacity:1;" data-600="transform:translateY(80px);opacity:0;">
-          h438
           <div class="page-title-wrapper">
 
             <!----Begin slider here-->
@@ -263,7 +263,8 @@ foreach($pages as $page) {
       
         $('#da-slider').cslider({
           autoplay  : true,
-          bgincrement : 450
+          bgincrement : 450,
+          interval: 6000 
         });
       
       });
