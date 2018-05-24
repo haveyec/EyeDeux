@@ -21,3 +21,43 @@
 #main-menu ul li a{
     color: blue;
 }
+
+.spacer_top{
+    padding-top: 100px;
+}
+
+.spacer_bottom{
+    margin-bottom: 100px;
+}
+
+#postBody{
+    position: relative;
+    top: 100px;
+    left: 0px;
+}
+
+#postBody h1{
+    color: #be9b44;
+    margin: auto;
+}
+
+.brandColor{
+    color: blue;
+
+}
+
+.padTitle{
+    padding-bottom: 100px;
+}
+
+#postContent p{
+    text-align: justify;
+    color: #000;
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+
+#daSlideH2{
+    color: green;
+}

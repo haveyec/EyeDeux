@@ -1,4 +1,4 @@
-.header-transparent.topnav-top #main-navigation #main-menu > ul > li > a, .header-transparent.topnav-top #main-navigation .main-menu > ul > li > a, .header-transparent.topnav-top #main-navigation .nav-right i, .header-transparent.header-scroll-transparent #main-navigation .nav-right i, .header-transparent.topnav-top #main-navigation .tools-btn span {color:#8A2BE2;}
+.header-transparent.topnav-top #main-navigation #main-menu > ul > li > a, .header-transparent.topnav-top #main-navigation .main-menu > ul > li > a, .header-transparent.topnav-top #main-navigation .nav-right i, .header-transparent.header-scroll-transparent #main-navigation .nav-right i, .header-transparent.topnav-top #main-navigation .tools-btn span {color:#be9b44;}
 .da-slider{
 	width: 100%;
 	min-width: 520px;
@@ -53,7 +53,7 @@
 	opacity: 1;
 }
 .da-slide h2{
-	color: #8A2BE2;
+	color: #be9b44;
 	font-size: 66px;
 	width: 50%;
 	top: 60px;
@@ -117,7 +117,7 @@
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
-	background: #8A2BE2;
+	background: #be9b44;
 	margin: 3px;
 	cursor: pointer;
 	box-shadow: 
@@ -151,7 +151,7 @@
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
-	background: #8A2BE2;
+	background: #be9b44;
 	cursor: pointer;
 	z-index: 2000;
 	opacity: 0;

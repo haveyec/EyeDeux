@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: My Awesome Custom Page
+Template Name: Homepage
 */
  ?>
 
@@ -38,6 +38,7 @@ Template Name: My Awesome Custom Page
   <link rel="stylesheet" href="<?php echo get_scripts_css_path(); ?>widgets.css"/>
   <link rel="stylesheet" href="<?php echo get_scripts_css_path(); ?>style2.css"/>
   <script type="text/javascript" src="<?php echo get_scripts_path(); ?>jquery-1.7.1.min.js"></script>
+  <script src="<?php echo get_scripts_path(); ?>master.js"></script>
   <script src="<?php echo get_scripts_path(); ?>modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -67,13 +68,7 @@ Template Name: My Awesome Custom Page
             </a>
           </div>
           <nav id="main-aside-menu">
-            <ul>
-              <?php $pages = get_pages();
-foreach($pages as $page) {
-    echo "<li>". "<a href=" .' " ' .get_permalink( get_page_by_title( $page->post_title ) )  .' " ' .">" .$page->post_title ."</a>" ."</li>";
-
-} ?>
-            </ul>
+            <?php wp_page_menu(); ?>
           </nav>
           <footer>
             <a href="#" class="facebook">
@@ -98,21 +93,14 @@ foreach($pages as $page) {
           <div class="container-fluid">
             <div class="nav-left">
               <div id="logo">
-                <a href="overview" data-logo-light="<?php echo get_images_path(); ?>logo/EyeDeux_MainLogo-01.png" data-logo-dark="<?php echo get_images_path(); ?>logo/EyeDeux_MainLogo-01.png">
+                <a href="" data-logo-light="<?php echo get_images_path(); ?>logo/EyeDeux_MainLogo-01.png" data-logo-dark="<?php echo get_images_path(); ?>logo/EyeDeux_MainLogo-01.png">
                   <img src="<?php echo get_images_path(); ?>logo/EyeDeux_MainLogo-01.png" alt="logo">
                 </a>
               </div>
             </div>
             <div class="nav-right">
               <nav id="main-menu" class="current-dark">
-                <ul>
-                  <?php $pages = get_pages();
-foreach($pages as $page) {
-    echo "<li>". "<a href=" .' " ' .get_permalink( get_page_by_title( $page->post_title ) )  .' " ' .">" .$page->post_title ."</a>" ."</li>";
-
-} ?>
-
-                </ul>
+               <?php wp_page_menu(); ?>
               </nav>
               <ul class="nav-tools">
                 <li class="search-tool">
@@ -147,36 +135,9 @@ foreach($pages as $page) {
 
             <!----Begin slider here-->
 
-            <div id="da-slider" class="da-slider">
-        <div class="da-slide">
-          <h2>Easy management</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <a href="#" class="da-link">Read more</a>
-          <div class="da-img"><img src="<?php echo get_images_path(); ?>2.png" alt="image01" /></div>
-        </div>
-        <div class="da-slide">
-          <h2>Revolution</h2>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-          <a href="#" class="da-link">Read more</a>
-          <div class="da-img"><img src="<?php echo get_images_path(); ?>3.png" alt="image01" /></div>
-        </div>
-        <div class="da-slide">
-          <h2>Warm welcome</h2>
-          <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-          <a href="#" class="da-link">Read more</a>
-          <div class="da-img"><img src="<?php echo get_images_path(); ?>1.png" alt="image01" /></div>
-        </div>
-        <div class="da-slide">
-          <h2>Quality Control</h2>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          <a href="#" class="da-link">Read more</a>
-          <div class="da-img"><img src="<?php echo get_images_path(); ?>4.png" alt="image01" /></div>
-        </div>
-        <nav class="da-arrows">
-          <span class="da-arrows-prev"></span>
-          <span class="da-arrows-next"></span>
-        </nav>
-      </div>
+            <?php 
+echo do_shortcode('[smartslider3 slider=2]');
+?>
 
             <!--End slider-->
           </div>
@@ -189,7 +150,7 @@ foreach($pages as $page) {
             <div class="text-element-inner">
               <h2 class="m-b-50">WHAT WE CAN ‘DEUX’ FOR YOU.</h2>
               <p>REVIEW THE MANY SERVICES EYE DEUX HAS TO OFFER.</p>
-              <a href="#" class="btn btn-hg btn-purple btn-bordered m-t-50">Services</a>
+              <a href="Services" class="btn btn-hg btn-warning btn-bordered m-t-50">Services</a>
             </div>
           </div>
         </div>
@@ -207,7 +168,7 @@ foreach($pages as $page) {
             <div class="text-element-inner">
               <h2 class="m-b-50">TAKE A CLOSER LOOK</h2>
               <p>VIEW THE AWESOME RESULTS FROM OUR CLIENTS.</p>
-              <a href="services-extended" class="btn btn-hg btn-purple btn-bordered m-t-50">Gallery</a>
+              <a href="Gallery" class="btn btn-hg btn-warning btn-bordered m-t-50">Gallery</a>
             </div>
           </div>
         </div>
@@ -219,7 +180,7 @@ foreach($pages as $page) {
             <div class="text-element-inner">
               <h2 class="m-b-50">START WITH EYE DEUX</h2>
               <p>INTERESTED IN A NEW CAREER PATH? VIEW OUR UPCOMING CLASSES.</p>
-              <a href="#" class="btn btn-hg btn-purple btn-bordered m-t-50">Classes</a>
+              <a href="Classes" class="btn btn-hg btn-warning btn-bordered m-t-50">Classes</a>
               <div class="counter counter-lg">
                 <div>
                   
